@@ -300,18 +300,11 @@
             <h2 class="mb-5 text-warning">
               준비되셨으면 견적을 의뢰해 보세요!
             </h2>
-            <!-- Signup form-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
             <form
               class="form-subscribe"
               id="contactFormFooter"
               data-sb-form-api-token="API_TOKEN"
+              method="POST"
               netlify
             >
               <!-- 인증표준 체크박스로 생성 -->
@@ -337,9 +330,9 @@
                 <div class="me-2">
                   <input
                     type="checkbox"
-                    id="iso45001"
+                    id="iso145001"
                     name="scheme"
-                    value="ISO45001"
+                    value="ISO145001"
                   />
                   <label for="iso45001" class="fs-5">ISO45001</label>
                 </div>
@@ -370,6 +363,7 @@
                     class="form-control form-control-md"
                     id="emailAddressBelow"
                     type="email"
+                    name="email"
                     placeholder="이메일 주소"
                     data-sb-validations="required,email"
                   />
@@ -399,6 +393,7 @@
                   <select
                     class="form-control form-control-md mt-2 mb-3"
                     id="region"
+                    name="region"
                     data-sb-validations="required"
                   >
                     <option value="">지역</option>
@@ -425,6 +420,7 @@
                     class="form-control form-control-md mt-2 mb-3"
                     id="proposalPrice"
                     type="number"
+                    name="proposalPrice"
                     placeholder="제안금액: (단위:만원)로 숫자만 입력해주세요."
                     data-sb-validations="required"
                   />
